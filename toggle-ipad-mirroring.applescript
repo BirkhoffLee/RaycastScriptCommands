@@ -12,6 +12,19 @@
 # @raycast.author birkhoff
 # @raycast.authorURL https://raycast.com/birkhoff
 
+set iPadAXIdentifier to "screen-mirroring-device-Sidecar:D7CE6CD0-F7F1-4D3A-AB6D-3334A112F189"
+
+on findLastTargetIndex(targetItem, itemList)
+	set lastIndex to 0
+	repeat with i from (count of itemList) to 1 by -1
+		if item i of itemList is targetItem then
+			set lastIndex to i
+			exit repeat
+		end if
+	end repeat
+	return lastIndex
+end findLastTargetIndex
+
 tell application "System Settings"
 	activate
 	delay 1.5
