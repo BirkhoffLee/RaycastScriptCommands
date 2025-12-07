@@ -13,7 +13,7 @@
 # @raycast.author birkhoff
 # @raycast.authorURL https://raycast.com/birkhoff
 
-curl -s https://api.birkhoff.me/v3/ip | jq -r '"\(.ip) | \(.city), \(.country) (\(.asorg))"' | awk '{printf "\033[33m%s\033[0m\n", $0}' || {
+curl -s --max-time 5 https://api.birkhoff.me/v3/ip | jq -r '"\(.ip) - \(.city), \(.country) (\(.asorg))"' | awk '{printf "%s\n", $0}' || {
   echo -e "\033[1;31mFailed to fetch\033[0m"
   exit 1
 }
