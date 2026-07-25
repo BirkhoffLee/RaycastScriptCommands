@@ -13,6 +13,7 @@
 # @raycast.description Copies the public IPv6 address to the clipboard.
 
 # @author https://github.com/raycast/script-commands/tree/master/commands#ip
+
 ip=$(curl -6s -m 5 https://api.birkhoff.me/v3/ip/ip)
 
 echo $ip | pbcopy

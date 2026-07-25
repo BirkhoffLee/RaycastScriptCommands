@@ -12,6 +12,6 @@
 # @raycast.author birkhoff
 # @raycast.authorURL https://raycast.com/birkhoff
 
-displayplacer "id:56FCEB6E-2787-484C-BF4A-6B9D2001762F res:1366x1024 hz:60 color_depth:4 enabled:true scaling:on origin:(-1366,0) degree:0"
+displayplacer "id:BD16BF3B-D6C3-469A-9BEA-90ECD0391D56 res:1288x946 hz:60 color_depth:4 enabled:true scaling:on origin:(-1288,0) degree:0"
 
 echo "iPad → LEFT"
